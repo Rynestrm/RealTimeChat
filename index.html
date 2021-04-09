@@ -8,12 +8,20 @@
       <title>Chat App</title>
    </head>
    <body>
-      <div id="messageContainer"></div>
-      <form id="sendContainer">
-         <input type="text" id="messageInput" autocomplete="off" />
+      <!-- will hold everything -->
+      <div id="container"></div>
+      <form>
+         <!-- input for messages -->
+         <input
+            type="text"
+            placeholder="Enter your message"
+            autocomplete="off"
+         />
          <button id="sendButton">Send</button>
       </form>
    </body>
+   <!-- used for socket io on localhost -->
    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+   <!-- custom scripts -->
    <script src="script.js"></script>
 </html>
