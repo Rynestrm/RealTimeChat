@@ -22,8 +22,4 @@ io.on('connection', function(socket){
       // broadcasts 'chatMessage' to every single person except the person who sent the message and puts the sending users name on it.
       socket.broadcast.emit('chatMessage', {message: message, name: users[socket.id]})
    })
-   // socket.on('disconnected', function(){
-   //    socket.broadcast.emit('userDisconnected', users[socket.id])
-   //    delete users[socket.id]
-   // })
 });
