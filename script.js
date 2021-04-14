@@ -1,7 +1,7 @@
 //client side scripts
 
 // getting the socket variable and the location of the host
-const socket = io('https://rynestrm.github.io/RealTimeChat/');
+const socket = io('http://localhost:3000');
 const messageForm = document.querySelector('form');
 const messageInput = document.querySelector('input');
 const container = document.getElementById('container');
